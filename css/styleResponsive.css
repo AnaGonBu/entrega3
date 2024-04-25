@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+/*pequeños reseteos*/
+p,h2{
+    margin: 0px;
+    padding: 10px;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+}
+.logo{
+    color: beige;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+}
+.navbar{
+    color: blueviolet;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+    list-style-type: none;
+}
+.contenido .tituloBox h2{
+    color: blueviolet;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+}
+.contenido .tituloBox h2 span{
+    background: blueviolet;
+    color: whitesmoke;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+}
+.contenido .tituloBox p{
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background: blueviolet;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+}
+.copyright p{
+    color: blueviolet;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+}
+.redesSociales li{
+    list-style-type: none;
+}
+.redesSociales li a{
+    color: blueviolet;
+    font-weight: bolder;/*estilos*/
+    padding: 0.5 em;/*estilos*/
+}
+section header{
+    font-family: sans-serif;
+    margin: 20px auto;
+    width: 100%;/*para q el contenedor principal ocupe el 90 del espacio*/
+}
+section div{
+    font-family: sans-serif;
+    margin: 20px auto;
+    width: 100%;/*para q el contenedor principal ocupe el 90 del espacio*/
+}
+/*logo y menu principal*/
+header{
+    position: absolute;
+    /* top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;     */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .item {
+    padding: 0.5em;
+    /* display: none; */
+    list-style-type: none;
+    text-decoration: none;
+}
+.navbar li ul a{
+    text-decoration: none;
+}
+.navbar li ul{
+    padding: 0.5em;
+    display: none;
+    list-style-type: none;
+}
+.navbar li:hover >ul{
+    /*mostrar submenus pasando raton*/
+    display: block;
+}
+/*Aplicar estilos a parte principal*/
+body{/*para el es el main*/
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.contenido .tituloBox{
+    width: 100%;
+}
+div.contenido .imgbox{
+    display: flex;
+}
+div.contenido .imgbox img{
+    height: 300px;
+    width: 100%;
+}
+div.hidden{
+    display: none;
+}
+.navbar i{
+    display: none;
+}
+/*ajustes responsive*/
+@media screen and (min-width:576px) {
+
+    
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img/spz.png" type="image/x-icon">
+    <title>Formulario de Contacto</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    box-sizing: border-box;
+    font-family:  "Open Sans", sans-serif ;
+    background-image: url(img/fondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    /* opacity: 1.5;   */
+}
+
+.bodyFormulario{
+    width: 100%;
+    padding: 5px;
+    background: whitesmoke;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+.bodyFormulario.texto{
+    color: black;
+    display: inline;
+}
+/* .bodyFormulario textarea{
+    align-items: center;
+} */
+::placeholder { color: whitesmoke; }/*Cambiar color placeholder con este pseudoelemento*/
+@media screen  {
+    .bodyFormulario{
+    margin-top: 150px;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    }
+
+}
+@media (max-width:570px) {
+    .bodyFormulario{
+    margin-top: 150px;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    }
+     form{
+        background-image: none;
+        background-color: black;
+    } 
+}
+</style>
+<body >
+    
+    <form action="mailto:anagbueno@gmail.com" method="post" name="Escríbeme!">
+            <h2>Escríbeme!</h2>
+        <!-- <div class="bodyFormulario">     -->
+            <br>
+            <fieldset class="bodyFormulario">
+                <fieldset class="bodyFormulario">
+                    <legend>Datos Personales</legend> 
+                    <div class="bodyFormulario">   
+                    <input type="text" name="name" id="" placeholder="Indica tu nombre" required>
+                        <br>
+                        <input type="text" name="apellidos" id="" placeholder="Indica tus apellidos" required>
+                        <br> 
+                        <input type="text" name="Empresa" id="" placeholder="Empresa">
+                        <br>
+                        <input type="text" name="Ciudad" id="" placeholder="Ciudad">
+                        <br>
+                        <br>
+                </fieldset>
+                
+                <fieldset class="bodyFormulario">
+                    <legend>Datos de contacto</legend>
+                        <br>
+                        <input type="text" name="Teléfono" id="" placeholder="Teléfono">
+                        <br>
+                        <input type="text" name="email" id="" placeholder="Correo eléctronico" required>
+                        <br>
+                        <br>
+                        <p class="textointern">Preferencia de contacto</p>
+                        <br>
+                        <input type="checkbox" name="Telefono" id=""><p class="bodyFormulario texto">Teléfono</p> <input type="checkbox" name="Mail" id=""><p class="bodyFormulario texto">e-mail</p>             
+                </fieldset>
+                <div class="bodyFormulario">
+                <p>Selecciona una opción</p>
+                <br>
+                <input list="desplegable">
+                <datalist id="desplegable">
+                    <option value="Análisis de datos"></option>
+                    <option value="Desarrollo Web"></option>
+                    <option value="Embriología"></option>
+                </datalist>
+                <br>
+            </div>
+                <br><p>Comentarios</p><br><textarea name="Requerimiento" id="" cols="30" rows="10" minlength="5" maxlength="200"
+                    placeholder="Escribe aqui lo que desees"></textarea>
+                
+                <br>
+                <p>Up to you!</p> <input type="file" name="adjunto" accept=".pdf, .jpg, .png, .zip, .rar" multiple>
+                <br>
+                <input type="reset" value="Eliminar"> 
+                <br>
+                <input type="submit" value="Enviar Correo">
+                </form>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

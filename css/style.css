@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  "Open Sans", sans-serif ;/*"Lora", serif; */
+}
+body{
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;;
+    /* background-color: aliceblue; */
+}
+section{
+    position: relative;/*La web esta en absoluto, necesitamos esto en relativo para manejarlo*/
+    width: 100%; /*Todo el ancho de la pantalla*/
+    min-height: 100vh;/*el minimo visble*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: beige;
+    font-size: 1.5em;/*para responsive*/
+    text-decoration: none;
+    text-transform: uppercase;/*mayusculas*/
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+}
+/* header .logo:hover{
+    color: blueviolet;
+    background-color: whitesmoke;
+    transition: 1s;
+} */
+header .navbar{
+    position: relative;
+    display: flex;
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+}
+header .navbar li a:hover{
+    border-bottom: 5px solid rgb(44, 2, 54);/*generamos movimiento y subrayado*/
+    padding: 2px;
+}
+.navbar >li{
+    float: left;
+}
+.navbar li ul{
+    /*ocultar menu*/
+    background-color: rgb(44, 2, 54);
+    color: whitesmoke;
+    display: none;
+    position: absolute;
+    min-width: 180px;
+}
+.navbar li:hover >ul{
+    /*mostrar submenus pasando raton*/
+    display: block;
+}
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+.contenido .tituloBox{
+    position: relative;
+    max-width: 2000px;
+    text-align: center;
+}
+.contenido .tituloBox h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+.contenido .tituloBox h2 span{
+    background: blueviolet;
+    color: whitesmoke;
+    padding: 0 10px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    border-radius: 20px;
+    /* position: absolute; */
+    display:inline-flex;
+}
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: blueviolet;
+    font-family: "Lora", serif;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background: blueviolet;
+    padding: 10px 20px;
+    margin: left 5px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;  
+}
+.contenido .tituloBox a:hover{
+    color: rgb(44, 2, 54);
+    background: whitesmoke;
+    transition: 0.5s;
+}
+.contenido .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: -20px;
+    margin-top: -70px;
+    z-index: -5;
+}
+.contenido .imgbox img{
+    height: 80vh;
+}
+.contenido .imgbox img:hover{
+    height: 80vh;
+}
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    color: blueviolet;
+    text-align: center;
+    margin-left: 50px;
+}
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding:  0px;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+    color: blueviolet;
+    font-size: 2em;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color: rgb(44, 2, 54);
+}
+.navbar i{
+    display: none;
+}
+@media (max-width:570px) {
+    section{
+        display: flex;
+        justify-content: center;
+    }
+    div.hidden{
+        display: none;
+    }
+    header .logo{
+        font-size: 0.2 em;
+    }
+    .navbar .item{
+        display: none;
+    }
+    .navbar i{
+        display: flex;
+        position: relative;
+    }
+    .navbar li i:hover >.navbar li a {
+        cursor: pointer;/*no aplica ni esto*/
+        display: block;
+        position: absolute;
+        min-width: 180px;
+    }
+    .imgbox img{
+        display: flex;
+        z-index: 1;
+        margin-left: 0%;
+        left: 1px;
+    }
+    section{
+        background-color: rgb(240, 248, 255, 1);
+        z-index: 0;
+        padding-left: 0%;
+    }
+    body{
+        background-image: none;
+        background-color: aliceblue;
+        padding-left: 0%;
+    }
+    .copyright{
+        /* display: flex; */
+        margin-left: 0%;
+        left: 10px;
+    }
+}
