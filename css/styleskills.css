@@ -86,16 +86,31 @@ footer{
     display: flex;
     position: absolute;
     color: whitesmoke;
-    margin-bottom: -40%;
+    margin-bottom: 60%;
 }
 
-@media (max-width:570px) {
-    .container{
-        display: grid;
+@media screen and (max-width:576px) {
+    body{
+        background-image: none;
+        background-color: aliceblue;
+        padding-bottom: 0%;
+    }
+    .card.back {
+        box-shadow: 0px 10px 15px rgb(54, 31, 67);
     }
     footer{
-       display: none;
+       margin-top: 100%;
+    } 
+}
+@media screen and (min-width:992px) {
+    body{
+        padding: 5% 0%;
     }
-
-    
+    body.container{
+        order: 3;
+    }
+    footer{
+          margin-top: 100%;
+          padding-top: 70%;
+    } 
 }

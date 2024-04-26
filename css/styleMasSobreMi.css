@@ -80,7 +80,7 @@ body {
     text-align: center;
 
   }
-  @media (max-width:570px) {
+  @media (max-width:576px) {
     .container{
         display: grid;
     }
@@ -95,6 +95,22 @@ body {
     header h1,h2{
       color: black;
     }
+}
+@media (max-width:992px) {
+  /* .container{
+      display: grid;
+  }
+  footer{
+      margin-bottom: -200%;
+      color: blueviolet;
+  }
+  body{
+      background-image: none;
+      background-color: aliceblue;
+  }  
+  header h1,h2{
+    color: black;
+  } */
 }
   
 

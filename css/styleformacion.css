@@ -89,18 +89,33 @@ footer{
     display: flex;
     position: absolute;
     color: whitesmoke;
-    margin-bottom: -40%;
+    margin-bottom: 10%;
 }
-@media (max-width:570px) {
-    .container{
-        display: grid;
-    }
+@media screen and (max-width:576px) {
+
     footer{
-        margin-bottom: -200%;
+        margin-top: 200%;
         color: blueviolet;
+       
     }
     body{
         background-image: none;
         background-color: aliceblue;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+    }  
+}
+@media screen and (min-width:992px) {
+    .container{
+        display: grid;
+        left: 2%;
+    }
+    footer{
+        margin-top: 120%;
+        color: blueviolet;
+        left: 45%;
+    }
+    body{
+        padding-bottom: 0%;
     }  
 }
