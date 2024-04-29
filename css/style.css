@@ -79,6 +79,7 @@ header .navbar li a:hover{
     display: none;
     position: absolute;
     min-width: 180px;
+    z-index: 2;
 }
 .navbar li:hover >ul{
     /*mostrar submenus pasando raton*/
@@ -192,7 +193,8 @@ header .navbar li a:hover{
 @media screen and (max-width:577px) {
     section{
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        
     }
     div.hidden{
         display: none;
@@ -200,13 +202,10 @@ header .navbar li a:hover{
     header .logo{
         font-size: 0.2 em;
     }
-    .navbar .item{
-        display: none;
-    }
-    .navbar i{
-        display: flex;
-        position: relative;
-    }
+    /* .navbar .item{
+        display: table-cell;
+        vertical-align: middle;
+    } */
     .navbar li i:hover >.navbar li a {
         cursor: pointer;/*no aplica ni esto*/
         display: block;
