@@ -192,12 +192,17 @@ header .navbar li a:hover{
 @media screen and (max-width:577px) {
     section{
         display: flex;
-        justify-content: left;
+        justify-content: center;
         
     }
-    div.hidden{
-        display: none;
+    .contenido{
+        display: flex;
+        flex-direction: column;/*necesito poer sobre mi, sobre la imagen, tengo que controlar la posicion*/
+        align-items: center;
     }
+    div.hidden p,h2{
+        display: none;
+    } 
     .navbar{
         background-color: blueviolet;
     }
@@ -208,7 +213,14 @@ header .navbar li a:hover{
     header .logo{
         font-size: 0.2 em;
     }
-
+    .tituloBox{
+        order: 2;/*orden de aparicion en el div*/
+        margin-bottom: 30px;/*separarlo del margen inferior, se quedaba sobre la otra seccion*/
+    }
+    .imgbox{
+        order: 1;/*debajo del link sobre mi*/
+        width: 100%;
+        margin-top: 0;   }
     .imgbox img{
         display: flex;
         z-index: 1;
@@ -217,7 +229,7 @@ header .navbar li a:hover{
     }
     section{
         background-color: rgb(240, 248, 255, 1);
-        z-index: 0;
+        z-index: 2;
         padding-left: 0%;
     }
     body{
