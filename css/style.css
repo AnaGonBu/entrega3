@@ -110,7 +110,6 @@ header .navbar li a:hover{
     font-family: "Lora", serif;
     font-weight: 600;
     border-radius: 20px;
-    /* position: absolute; */
     display:inline-flex;
 }
 .contenido .tituloBox p{
@@ -199,19 +198,17 @@ header .navbar li a:hover{
     div.hidden{
         display: none;
     }
+    .navbar{
+        background-color: blueviolet;
+    }
+    header .navbar li a{
+        color: whitesmoke;
+    }
+
     header .logo{
         font-size: 0.2 em;
     }
-    /* .navbar .item{
-        display: table-cell;
-        vertical-align: middle;
-    } */
-    .navbar li i:hover >.navbar li a {
-        cursor: pointer;/*no aplica ni esto*/
-        display: block;
-        position: absolute;
-        min-width: 180px;
-    }
+
     .imgbox img{
         display: flex;
         z-index: 1;
@@ -230,7 +227,6 @@ header .navbar li a:hover{
         width: 100%;
     }
     .copyright{
-        /* display: flex; */
         margin-left: 0%;
         left: 10px;
     }
